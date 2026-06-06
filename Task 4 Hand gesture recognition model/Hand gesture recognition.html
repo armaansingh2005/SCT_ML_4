@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+
+<title>GestureVision AI</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<h1>🤖 GestureVision AI</h1>
+
+<p>Real-Time Hand Gesture Recognition System</p>
+
+
+
+<div class="camera-box">
+
+<video id="video" autoplay playsinline></video>
+
+<canvas id="canvas"></canvas>
+
+</div>
+
+
+
+
+<div class="dashboard">
+
+
+<div class="card">
+
+<h3>Gesture</h3>
+
+<h2 id="gesture">
+Waiting
+</h2>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>Command</h3>
+
+<h2 id="command">
+-
+</h2>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>FPS</h3>
+
+<h2 id="fps">
+0
+</h2>
+
+</div>
+
+
+</div>
+
+
+
+
+<h3>Gesture History</h3>
+
+<ul id="history"></ul>
+
+
+</div>
+
+
+
+<div id="pointer"></div>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
